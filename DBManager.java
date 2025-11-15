@@ -1,6 +1,6 @@
 import java.sql.*;
-import com.jcraft.jsch.JSch;
-import com.jcraft.jsch.Session;
+import java.util.*;
+
 
 public class DBManager{
      private static final String URL = "";
@@ -12,31 +12,32 @@ public class DBManager{
      //DriveScanner ds;
 
      public boolean connect() throws SQLException{
-          connection = DriverManager.getConnection(URL, USER, PASSWORD);
-          return connection != null;
+          return true;
+          // connection = DriverManager.getConnection(URL, USER, PASSWORD);
+          // return connection != null;
      }
 
-     // public List<Drive> getDrives(){
+     public List<Drive> getDrives(){
+          return null;
+     }
 
-     // }
+     public String insertDrive(Drive drive){
+          return null;
+     }
 
-     // public String insertDrive(Drive drive){
+     public void closeConnection(){
 
-     // }
+     }
 
-     // public void closeConnection(){
+     public List<FileItem> getFiles(Drive d, FileItem f){
+          return null;
+     }
 
-     // }
+     public List<FileItem> getFiles(Drive d){
+          return null;
+     }
 
-     // public List<FileItem> getFiles(Drive d, FileItem f){
-
-     // }
-
-     // public List<FileItem> getFiles(Drive d){
-
-     // }
-
-     // public List<FileItem> getSearchResults(String query){
-
-     // }
+     public List<FileItem> getSearchResults(String query){
+          return null;
+     }
 }
